@@ -1,0 +1,51 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+	Nikita Korshun
+{% endblock %}
+
+{% block content %}
+
+    <section class="portfolio-section">
+        <h2 style="user-select: none">PROJECTS</h2>
+        <ul class="project-buttons">
+            <a href="{% url 'todo' %}" class="project-button">
+                <li class="project-item" style="user-select: none">
+                    App 1
+                        <div class="project-info">
+                            <h3>TodoList App</h3>
+                            <p>Application for viewing, adding and deleting tasks to complete.
+                                Simple, intuitive and user-friendly design.</p>
+                        </div>
+                </li>
+            </a>
+            <a href="{% url 'weather' %}" class="project-button">
+                <li class="project-item" style="user-select: none">
+                    App 2
+                        <div class="project-info">
+                            <h3>Weather app</h3>
+                            <p>Application for viewing the current weather in the city.
+                                It is possible to save the results of past queries, as well as remove
+                                cities from the search history.</p>
+                        </div>
+                </li>
+            </a>
+            <a href="{% url 'converter' %}" class="project-button">
+                <li class="project-item" style="user-select: none">
+                    App 3
+                        <div class="project-info">
+                            <h3>Currency Converter</h3>
+                            <p>Application for converting from one currency to another.
+                                Simple and convenient design. Data is obtained from an external source and
+                                updated with each request.</p>
+                        </div>
+                </li>
+            </a>
+        </ul>
+    </section>
+
+    <section class="portfolio-section">
+        <h2 style="user-select: none">ABOUT ME</h2>
+    </section>
+
+{% endblock %}
